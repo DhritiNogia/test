@@ -1,0 +1,168 @@
+/* styles.css */
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  height: 100vh; /* Full height of the screen */
+  display: flex;
+  flex-direction: column; /* Stack components vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align to the top */
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #2196F3; /* Primary color */
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* App container for centered components */
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center horizontally */
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196F3; /* Primary color */
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header input {
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+}
+
+.header button {
+  background-color: #fff;
+  color: #2196F3;
+  border: 1px solid #2196F3;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.header button:hover {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+/* Styling for the content and the order details card */
+.card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+.message {
+  padding: 10px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.message.success {
+  background-color: #4CAF50; /* Green for success */
+}
+
+.message.error {
+  background-color: #f44336; /* Red for error */
+}
+
+.message.loading {
+  background-color: #2196F3; /* Blue for loading */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2196F3;
+  color: white;
+  border-top: 2px solid #fff;
+  margin-top: 40px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-container {
+    padding: 10px;
+  }
+
+  .header input {
+    width: 100%;
+  }
+}
